@@ -1,0 +1,45 @@
+[OUTPUT]
+OUTPUT_PATH = ../models/1_epochs
+[DATA]
+# Only to the data
+PATH = ../data
+# boolean if the data is preprocessed already or not. Processed data is saved in data/processed
+PRE_PROCESS = 1
+# Standard, MinMax, Robust
+STANDARDIZATION = Standard
+FEATURES = 24
+# to add noise to the test data at specific positions 
+ADD_NOISE= 0
+
+[MODEL]
+# BAYSIAN_LSTM, LSTM
+MODEL_NAME = BAYSIAN_LSTM
+
+[TRAIN]
+BATCH_SIZE = 512
+SEQUENCE_WINDOW = 30
+OPTIMIZER = ADAM
+LOSS = RMSE
+LEARNING_RATE = 0.01
+EPOCHS = 1
+EARLY_STOPPING = 200
+# Step size to drop the learning rate by gamma after 
+STEP_SIZE = 60
+GAMMA = 0.05
+
+
+[TEST]
+CHECKPOINT_PATH = ../models/20_epochs
+BATCH_SIZE = 10
+SEQUENCE_WINDOW = 30
+LOSS=RMSE
+# use dropout prediction 
+USE_DROPOUT = 1
+SAMPLING_NR = 5
+SAVE_RESULTS = 0
+
+# parameters for the added noise
+NOISE_SIGMA = 0.5
+NOISE_MU= 0
+
+
