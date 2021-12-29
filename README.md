@@ -1,7 +1,7 @@
 # Remaining Useful Like Estimation Using Bayesian Neural Networks 
 
 ## Motivation
-The remaining useful life estimation is one of the most important industrial applications to save replacement costs and potentially save lives. Combining this with uncertainty estimation that enforces neural networks decision is a great toolbox that can enhance the automatization industry and achieve higher quality products. 
+The remaining useful life estimation is one of the most critical industrial applications to save replacement costs and potentially save lives. Combining this with uncertainty estimation that enforces neural networks decision is a great toolbox that can enhance the automatization industry and achieve higher quality products. 
 
 ## Installation
 These instructions will get you a copy of the project up and running on your local machine
@@ -12,12 +12,12 @@ git clone https://github.com/serop-ba/RUL_Estimation_With_Bayesian_NN.git
 ```
 ### Setup
 
-To install the enviroment use the following instructions:
-1) create new enviroment 
+To install the environment, use the following instructions:
+1) create a new environment 
 ```
 python3 -m venv venv 
 ```
-2) activate the enviroment 
+2) activate the environment 
 ```
 .\venv\Scripts\activate
 ```
@@ -26,17 +26,17 @@ python3 -m venv venv
 pip install -r requirements.txt
 ```
 
-If there is isssue with pytorch, please reinstall it using the https://pytorch.org.
+If there is an issue with PyTorch, please reinstall it using https://pytorch.org.
 ### Load
 you need to download the data and save it in the folder data/raw 
-To download the data use the link: 
+To download the data, use the link: 
 https://ti.arc.nasa.gov/c/6/
 ## Run
-To start the experiments run the file train.py after you configure the config.txt
+To start the experiments, run the file train.py after you configure the config.txt
 make sure you pay attention to the following parameters 
 
-PRE_PROCESS (for the first run put this to 1) then you can set it to 0 
-If you want to add noise you have to set PRE_PROCESS to 1 to generate new noisy test data
+PRE_PROCESS (for the first run, put this to 1), then you can set it to 0 
+If you want to add noise, you have to set PRE_PROCESS to 1 to generate new noisy test data
 There is only one option for OPTIMIZER, LOSS.
 
 To test the data and create the figures run the file test.py 
@@ -65,7 +65,7 @@ Project Organization
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    ├── notebooks          <- Jupyter notebooks. The naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
     │
@@ -77,7 +77,7 @@ Project Organization
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── setup.py           <- makes project pip installable (pip install -e .), so src can be imported
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
@@ -92,7 +92,7 @@ Project Organization
     │   │   ├── predict_model.py
     │   │   └── train_model.py
     │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │   └── visualization  <- Scripts to create exploratory and results-oriented visualizations
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
