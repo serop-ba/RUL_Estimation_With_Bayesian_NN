@@ -7,19 +7,25 @@ The remaining useful life estimation is one of the most important industrial app
 These instructions will get you a copy of the project up and running on your local machine
 ### Clone
 Clone this repo to your local machine using:
-git clone https://mad-srv.informatik.uni-erlangen.de/MadLab/industry-4.0/seminar-i4.0/ws2021/rul-estimation-with-bayesian-nns.git
-### Setup
 ```
+git clone https://github.com/serop-ba/RUL_Estimation_With_Bayesian_NN.git
+```
+### Setup
+
 To install the enviroment use the following instructions:
 1) create new enviroment 
-python3 -m venv venv 
-2) activate the enviroment 
-.\venv\Scripts\activate # activate the enviroment 
-3) download the necessary packages
-pip install -r requirements.txt
-
-
 ```
+python3 -m venv venv 
+```
+2) activate the enviroment 
+```
+.\venv\Scripts\activate
+```
+3) download the necessary packages
+```
+pip install -r requirements.txt
+```
+
 If there is isssue with pytorch, please reinstall it using the https://pytorch.org.
 ### Load
 you need to download the data and save it in the folder data/raw 
